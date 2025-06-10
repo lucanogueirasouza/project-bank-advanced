@@ -40,6 +40,11 @@ def criar_usuario():
         "Digite seu CPF (apenas números): "
         )
     
+    for i in usuarios:
+        if i["CPF"] == cpf:
+            print("CPF já cadastrado.")
+            return None
+    
     if len(cpf) != 11 or not cpf.isdigit():
         print(
             "CPF inválido. Deve conter exatamente 11 dígitos numéricos."
