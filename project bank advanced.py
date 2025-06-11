@@ -1,5 +1,4 @@
 from random import randint
-from os import system
 
 usuarios = []
 usuario_atual = None
